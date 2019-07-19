@@ -13,23 +13,23 @@ const reviews = 'http://localhost:3004';
 app.use('/:id', express.static('./public'));
 
 app.all('/api/photos/:id', (req, res) => {
-  console.log('Connected to Photos!');
   proxy.web(req, res, { target: photos })
+  console.log('Connected to Photos!');
 });
 
 app.all('/api/product/:pid', (req, res) => {
-  console.log('Connected to Related Products!');
   proxy.web(req, res, { target: relatedProducts })
+  console.log('Connected to Related Products!');
 });
 
 app.all('/api/itemSummary/:id', (req, res) => {
-  console.log('Connected to Items!');
   proxy.web(req, res, { target: itemSummary })
+  console.log('Connected to Items!');
 });
 
 app.all('/api/reviews/:id', (req, res) => {
-  console.log('Connected to Reviews!');
   proxy.web(req, res, { target: reviews })
+  console.log('Connected to Reviews!');
 });
 
 app.listen(PORT, () => console.log(`Proxy server running on port ${PORT}`));
