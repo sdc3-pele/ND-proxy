@@ -17,7 +17,7 @@ app.all('/api/photos/:id', (req, res) => {
   proxy.web(req, res, { target: photos })
 });
 
-app.all('/api/products/:pid', (req, res) => {
+app.all('/api/product/:pid', (req, res) => {
   console.log('Connected to Related Products!');
   proxy.web(req, res, { target: relatedProducts })
 });
