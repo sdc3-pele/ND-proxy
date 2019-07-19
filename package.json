@@ -1,0 +1,36 @@
+{
+  "name": "mike-proxy",
+  "version": "1.0.0",
+  "description": "Proxy server for fec3-galadriel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon server/server.js",
+    "react:dev": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fec3-galadriel/mike-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fec3-galadriel/mike-proxy/issues"
+  },
+  "homepage": "https://github.com/fec3-galadriel/mike-proxy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy": "^1.17.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
